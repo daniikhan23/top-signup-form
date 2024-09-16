@@ -18,7 +18,7 @@
       <div class="main">
         <div class="top-section">
           <p class="descr">
-            This is not a real online service. You know you need something like
+            This is not a real online service! You know you need something like
             this in your life to help you realise your deepest dreams. Sign up
             now to get started.
           </p>
@@ -27,33 +27,60 @@
         </div>
         <div class="form-area">
           <p>Let's do this!</p>
-          <form action="..." method="post">
-            <div class="cols">
-              <div class="rows">
+          <form action="#" method="post">
+            <div class="rows">
+              <div class="cols">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" />
               </div>
-              <div class="rows">
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email" id="email-address" />
-              </div>
-              <div class="rows">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-              </div>
-            </div>
-            <div class="cols">
-              <div class="rows">
+              <div class="cols">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" />
               </div>
-              <div class="rows">
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number" />
+            </div>
+            <div class="rows">
+              <div class="cols">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email" id="email-address" />
               </div>
-              <div class="rows">
+              <div class="cols">
+                <label for="phone-number">Phone Number</label>
+                <input type="number" name="phone-number" id="phone-number" />
+              </div>
+            </div>
+            <div class="rows">
+              <div class="cols">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  minlength="8"
+                  maxlength="20"
+                  title="Passwords do not match"
+                />
+                <em class="help-block">*Passwords do not match</em>
+              </div>
+              <div class="cols">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="password" id="confirm-password" />
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                  minlength="8"
+                  maxlength="20"
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="create-btn">
+                <button>Create Account</button>
+              </div>
+              <div class="login">
+                <p>Already have an account?</p>
+                <button>Log in</button>
               </div>
             </div>
           </form>
