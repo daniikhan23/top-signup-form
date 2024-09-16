@@ -1,0 +1,43 @@
+@font-face {
+  font-family: OdinFont;
+  src: url(assets/Norse-Bold.otf);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container .img-sidebar {
+  position: relative;
+}
+
+.container .img-sidebar .bg {
+  width: 30vw;
+  height: 100vh;
+}
+
+.container .img-sidebar .brand {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .img-sidebar .brand .logo {
+  height: 15vh;
+  width: 7.5vw;
+}
+
+.container .img-sidebar .brand p {
+  color: white;
+  font-family: OdinFont;
+  font-size: 100px;
+}
